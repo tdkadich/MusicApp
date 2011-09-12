@@ -1,6 +1,8 @@
 package edu.uiuc.acm.sigmobile.tutorial.musicapp;
 
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +19,10 @@ public class MusicAppActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				bShowSongs.setText("pressed!");
+				
+				Intent Intentx = new Intent(getApplicationContext(), SongListActivity.class);
+                startActivityForResult(Intentx, 0);
+				
 			}
 		});
     }
