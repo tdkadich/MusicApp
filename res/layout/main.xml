@@ -3,14 +3,47 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#313"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-<Button android:id="@+id/show_songs"
-	android:layout_height="wrap_content"
-	android:layout_width="wrap_content"
-	android:text="Activity 1"/>
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:padding="15dp" 
+	    android:text="@string/hello"
+	    />
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    >
+		<Button android:id="@+id/show_songs"
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+		    android:padding="15dp" 
+			android:text="Activity 1"/>
+		<Button android:id="@+id/show_artists"
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+		    android:padding="15dp" 
+			android:text="Activity 2"/>
+	</LinearLayout>
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    >		
+		<Button android:id="@+id/show_random"
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+		    android:padding="15dp" 
+			android:text="Activity 3"/>
+		<Button android:id="@+id/show_search"
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+		    android:padding="15dp" 
+			android:text="Activity 3"/>
+	</LinearLayout>
 </LinearLayout>
